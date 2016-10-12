@@ -4,6 +4,7 @@ package tutorial;
 import com.opensymphony.xwork2.ActionSupport;
 import java.sql.*;
 
+
 public class Add extends ActionSupport {
 	public  String ISBN;
 	public String Title;
