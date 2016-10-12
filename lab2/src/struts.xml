@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+	
+<struts>
+    <include file="struts-default.xml"/>
+    <package name="tutorial" extends="struts-default">
+        <action name="edit" class="tutorial.edit">
+            <result name = "success">edit.jsp</result>
+            <result name = "error">error.jsp</result>
+        </action>
+        <action name="Add" class="tutorial.Add">
+            <result name = "success">success.jsp</result>
+            <result name = "error">error.jsp</result>
+            <result name = "addAuthor">addauthor.jsp</result>
+        </action>
+        <action name="addAuthor" class="tutorial.addAuthor">
+            <result name = "success">success.jsp</result>
+            <result name = "error">error.jsp</result>
+        </action>
+        <action name="del" class="tutorial.del">
+            <result name = "success">success.jsp</result>
+            <result name = "error">error.jsp</result>
+        </action>
+        <action name="update" class="tutorial.update">
+            <result name = "success">success.jsp</result>
+            <result name = "error">error.jsp</result>
+        </action>
+        <action name="showbook" class="tutorial.showbook">
+            <result name = "success">show.jsp</result>
+            <result name = "error">error.jsp</result>
+        </action>
+        <action name="search" class="tutorial.search">
+            <result name = "success">result.jsp</result>
+            <result name = "error">error.jsp</result>
+        </action>
+        <action name="mainlist" class="tutorial.mainlist">
+            <result name = "success">main.jsp</result>
+            <result name = "error">main.jsp</result>
+        </action>
+    </package>
+    
+   
+</struts>
